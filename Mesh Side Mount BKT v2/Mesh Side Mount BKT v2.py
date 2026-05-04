@@ -22,7 +22,7 @@ with BuildPart() as part:
 
 if __name__ == "__main__":
     export_stl(part.part, "output_Mesh Side Mount BKT v2.stl")
-    
+    export_step(part.part, "output_Mesh Side Mount BKT v2.step")
     try:
         from ocp_vscode import show
         show(part)
